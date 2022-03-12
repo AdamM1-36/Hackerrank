@@ -13,6 +13,6 @@ int main(){
     auto start = high_resolution_clock::now();
     cout<<fib(n);
     auto stop = high_resolution_clock::now();
-    auto duration = duration_cast<milliseconds>(stop-start);
-    cout<<"\ntime spent: "<<duration.count()<<" milliseconds";
+    auto duration = duration_cast<microseconds>(stop-start);
+    cout<<"\ntime spent: "<<duration.count()<<" microseconds";
 }
